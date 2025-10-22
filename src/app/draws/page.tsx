@@ -2,7 +2,7 @@ import { Header } from "@/components/header"
 import { Sparkles } from "lucide-react"
 import { DrawList } from "@/components/draw-list"
 
-export default async function SorteosPage() {
+export default async function DrawsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />

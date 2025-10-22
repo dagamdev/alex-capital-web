@@ -32,6 +32,7 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
             botUsername={BOT_USERNAME}
             onAuthCallback={(user) => {
               login(user).then(data => {
+                console.log(data)
                 setUser(data.user)
                 onOpenChange(false)
 
