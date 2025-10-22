@@ -30,6 +30,7 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
         <div className="flex justify-center py-4">
           <LoginButton
             botUsername={BOT_USERNAME}
+            lang="es"
             onAuthCallback={(user) => {
               login(user).then(data => {
                 console.log(data)

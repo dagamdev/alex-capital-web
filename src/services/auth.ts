@@ -8,6 +8,11 @@ export async function login (data: TelegramAuthData) {
   return res.data
 }
 
+export async function logout () {
+  const res = await api.post('/auth/logout')
+  return res.data
+}
+
 export async function getSessionUser () {
   const res = await api.get<User>('/users/me')
   return res.data

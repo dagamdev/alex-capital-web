@@ -11,5 +11,7 @@ api.defaults.headers.patch['Content-Type'] = 'application/json'
 
 api.interceptors.response.use(
   (response) => response,
-  (error) => console.log('Error in api: ', error)
+  (error) => {
+    if(error.response.data.message !== 'Unauthorized') console.log('Error in api: ', error.response.data.message)
+  }
 )
