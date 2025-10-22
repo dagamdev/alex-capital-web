@@ -5,6 +5,7 @@ import { TrendingUp } from "lucide-react"
 import { LoginButton } from "@telegram-auth/react"
 import { useUserSession } from "@/stores/user-session"
 import { login } from "@/services/auth"
+import { BOT_USERNAME } from "@/utils/constants"
 
 interface LoginDialogProps {
   open: boolean
@@ -28,10 +29,9 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
         </DialogHeader>
         <div className="flex justify-center py-4">
           <LoginButton
-            botUsername='dagamdev_bot'
+            botUsername={BOT_USERNAME}
             onAuthCallback={(user) => {
               login(user).then(data => {
-                console.log(data)
                 setUser(data.user)
                 onOpenChange(false)
 

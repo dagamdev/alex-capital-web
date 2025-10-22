@@ -20,8 +20,7 @@ export default function HomePage() {
               <span className="text-primary">Alex Capital</span>: Dominando los mercados con estrategia y disciplina
             </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">
-              Especializado en análisis técnico y gestión de riesgo. Comparto mi experiencia en trading de forex y
-              criptomonedas, ayudando a traders a desarrollar estrategias rentables y sostenibles.
+              Especializado en análisis técnico y gestión de riesgo. Comparto mi experiencia en trading de opciones binarias, formando traders rentables y sostenibles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://www.youtube.com/@AlexCapital04" target="_blank" rel="noopener noreferrer">
@@ -57,13 +56,7 @@ export default function HomePage() {
           <Card className="border-primary/20">
             <CardHeader className="pb-3">
               <CardDescription>Años de Experiencia</CardDescription>
-              <CardTitle className="text-4xl text-primary">8+</CardTitle>
-            </CardHeader>
-          </Card>
-          <Card className="border-primary/20">
-            <CardHeader className="pb-3">
-              <CardDescription>ROI Promedio Anual</CardDescription>
-              <CardTitle className="text-4xl text-primary">45%</CardTitle>
+              <CardTitle className="text-4xl text-primary">5+</CardTitle>
             </CardHeader>
           </Card>
           <Card className="border-primary/20">
@@ -75,7 +68,7 @@ export default function HomePage() {
           <Card className="border-primary/20">
             <CardHeader className="pb-3">
               <CardDescription>Estudiantes</CardDescription>
-              <CardTitle className="text-4xl text-primary">1,200+</CardTitle>
+              <CardTitle className="text-4xl text-primary">300+</CardTitle>
             </CardHeader>
           </Card>
         </div>
@@ -259,10 +252,9 @@ export default function HomePage() {
               Participa en Nuestros <span className="text-primary">Sorteos</span>
             </h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto text-pretty">
-              Como agradecimiento a la comunidad, realizamos sorteos mensuales de cursos, sesiones de mentoría y
-              herramientas de trading premium. ¡No te pierdas la oportunidad de ganar!
+              Como agradecimiento a la comunidad, realizamos sorteos mensuales de fondeo de cuentas. ¡No te pierdas la oportunidad de ganar!
             </p>
-            <Link href="/sorteos">
+            <Link href="/draws">
               <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 glow-primary">
                 Ver Sorteos Activos <ArrowRight className="h-4 w-4" />
               </Button>
@@ -270,15 +262,6 @@ export default function HomePage() {
           </CardContent>
         </Card>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-primary/20 mt-16">
-        <div className="container mx-auto px-4 py-8 text-center text-sm text-muted-foreground">
-          <p>
-            © 2025 <span className="text-primary font-semibold">Alex Capital</span>. Todos los derechos reservados.
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }

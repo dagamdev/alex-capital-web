@@ -33,6 +33,13 @@ export default function RootLayout({
           {children}
           <Toaster />
         </ThemeProvider>
+        <footer className="border-t border-primary/20 mt-16">
+          <div className="container mx-auto px-4 py-8 text-center text-sm text-muted-foreground">
+            <p>
+              © 2025 <span className="text-primary font-semibold">Alex Capital</span>. Todos los derechos reservados.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
